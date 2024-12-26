@@ -1,35 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc Mừng Sinh Nhật</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./main.css">
+  <title>Some</title>
 </head>
 <body>
-    <div class="container">
-        <h1>🎉 Chúc Mừng Sinh Nhật 🎂</h1>
-        <form id="birthdayForm">
-            <label for="nameInput">Nhập tên người thân:</label>
-            <input type="text" id="nameInput" placeholder="Tên người thân" required>
-            <label for="messageInput">Lời chúc:</label>
-            <textarea id="messageInput" placeholder="Nhập lời chúc của bạn" required></textarea>
-            <button type="submit">🎈 Gửi Lời Chúc 🎉</button>
-        </form>
-        <div id="greeting" style="display: none;">
-            <p id="personalMessage"></p>
-        </div>
-        <button id="playButton">🎶 Phát Nhạc Chúc Mừng 🎵</button>
-        <div class="image-container">
-            <img src="cake.png" alt="Bánh sinh nhật" class="birthday-cake">
-        </div>
-        <canvas id="confettiCanvas"></canvas>
+  <div class="startForm">
+    <div class="startLetter">
+      <div class="contentLetter"></div>
+      <img class="myAI" src="" alt="">
+      <div class="sticker"></div>
+      <button class="recieve"><i class="fa-solid fa-gift"></i></button>
     </div>
+  </div>
 
-    <!-- Nhúng nhạc -->
-    <audio id="birthdaySong" src="happy_birthday.mp3"></audio>
-    
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="script.js"></script>
+  <div class="backgroundParty">
+    <img class="balloon1 balloon" src="./img/PNGkhothietke.net-02776.png" alt="">
+    <img class="balloon2 balloon" src="./img/PNGkhothietke.net-02776.png" alt="">
+    <img class="bannerParty" src="./img/makeupspa-kit-theme-happy-birthday-bunting-paper-banner-party-supply-261454.png" alt="">
+    <div class="letterForm">
+      <input type="checkbox" id="mess">
+      <div class="content">
+        <div class="mainContent"></div>
+        <div class="img1"><img class="img" src="" alt=""></div>
+      </div>
+      <label class="designBox" for="mess"></label>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
+
