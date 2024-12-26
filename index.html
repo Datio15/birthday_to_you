@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Chúc Mừng Sinh Nhật 🎂</h1>
+        <form id="birthdayForm">
+            <label for="nameInput">Nhập tên người thân:</label>
+            <input type="text" id="nameInput" placeholder="Tên người thân" required>
+            <label for="messageInput">Lời chúc:</label>
+            <textarea id="messageInput" placeholder="Nhập lời chúc của bạn" required></textarea>
+            <button type="submit">🎈 Gửi Lời Chúc 🎉</button>
+        </form>
+        <div id="greeting" style="display: none;">
+            <p id="personalMessage"></p>
+        </div>
+        <button id="playButton">🎶 Phát Nhạc Chúc Mừng 🎵</button>
+        <div class="image-container">
+            <img src="cake.png" alt="Bánh sinh nhật" class="birthday-cake">
+        </div>
+        <canvas id="confettiCanvas"></canvas>
+    </div>
+
+    <!-- Nhúng nhạc -->
+    <audio id="birthdaySong" src="happy_birthday.mp3"></audio>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
